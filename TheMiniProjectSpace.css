@@ -1,0 +1,657 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    background-color: #120321;
+    color: white;
+
+}
+.button{
+    width: 100%;
+    height: 12svh;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    position: absolute;
+}
+.darklig{
+    width: 100px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 20px;
+
+    background-color: rgb(0, 0, 0);
+    position: relative;
+
+
+    transition: all 3s;
+    transform: rotate(90deg);
+}
+.dlg{
+    width: 45px;
+    height: 45px;
+
+    border-radius: 100%;
+    border: 1px solid;
+    background-color: rgb(180, 180, 180);
+    color: black;
+
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: -3;
+
+    transition: all 0.5s ease ;
+}
+
+@media screen and (max-width : 1000%) {
+    .darklig{
+        top: 9px;
+    }
+}
+/* ====================================================================================== */
+
+/* .backGroundBefore{
+    width: 100%;
+    position: relative;
+}
+.backGroundBefore::before{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-color: red;
+
+    top: 0;
+    left: 0;
+    z-index: -999;
+
+
+    animation-name: backGroundScroll;
+    animation-duration: 15s;
+    animation-timeline: view();
+    animation-range-end: scroll();
+}
+@keyframes backGroundScroll{
+    to{
+        top: 0;
+        left: 0;
+    }
+}  */
+.mainHome{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden ;
+ }
+.gameMainImage{
+    height: 85svh !important;
+    width: 100% !important;
+
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+
+}
+.mainOuter{
+    height: 95% !important;
+    
+    border: 1px solid;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    border-radius: 10px;
+    margin: 50px ;
+    overflow: hidden ;
+
+    
+    transition: all 1s !important
+
+}
+.mainInner{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+
+    background-color: aqua;
+}
+.mainInner img{
+    width: 100%;
+    height: 100%;
+}
+li button{
+    display: none;
+}
+.slick-dots{
+    position: absolute;
+    bottom: -5px;
+    display: flex;
+    gap: 12px;
+
+}
+.slick-active{
+    color: red;
+}
+.slick-next{
+    display: none !important;
+}
+
+.slick-prev{
+    display: none !important;
+}
+.fa-arrow-right::before{
+    display: none;
+}
+.fa-arrow-left::before{
+    display: none;
+}
+
+@media screen and (max-width : 1000px) {
+    .gameMainImage{
+        width: 100% !important;
+        height: 45svh !important;
+    }
+}
+
+/* ================================================================== */
+
+
+.popularMenName{
+    
+    font-size: 28px;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Kanit", sans-serif;
+    text-shadow: 0px 0px 18px gray;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 6%;
+    padding-bottom: 1%;
+    color: rgb(255, 244, 244);  
+    /* background-color: black;
+    width: 100%;
+    height: 15svh;
+
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 213, 255); */
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.popularPlayersMatter{
+    width: 100%;
+    height: fit-content;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    scale: 0.6;
+    animation: zoomIn;
+    animation-duration: 0.5s;
+    animation-timeline: view();
+    animation-range-end: scroll();
+}
+
+.popularPlayersAbout{
+    width: 70%;
+    margin-top: 30px;
+    color:#E0C568FF;
+    font-family: "Kanit", sans-serif;
+
+    font-size: 16px;
+}
+
+.popularPlayersAbout b {
+    color:rgb(215, 132, 197);
+    font-size: 20px;
+}
+
+@media screen and (max-width : 800px) {
+    .popularMenName{
+        width: 100%;
+        height: 10svh;
+        font-size: 1.7rem;
+    }
+    .popularPlayersAbout{
+        width: 95%;
+    }
+    .popularPlayersAbout b {
+        font-size: 18px;
+    }
+}
+
+.allMenImages{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    
+}
+.PlayerCard{
+    width: 330px;
+    height: 400px;
+    /* border: 1px solid; */
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    /* perspective: 1000px; */
+
+    
+    scale: 0.5;
+    animation: zoomIn;
+    animation-duration: 0.5s;
+    animation-timeline: view();
+    animation-range-end: scroll();
+}
+.PlayerCard:hover{
+    cursor: pointer;
+}
+
+/* ============================================================================================ */
+
+@keyframes zoomIn {
+    to {
+        scale: 1;
+    }
+}
+
+/* ============================================================================================ */
+
+.PlayerCardInner{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    /* border: 1px solid; */
+    backface-visibility: hidden;
+
+    position: relative;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+
+}
+.individualFront{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+    border-radius: 10px;
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    position: absolute;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    box-shadow: 0px 0px 4px 3px rgb(255, 255, 255);
+    
+    /* animation-name: playerImgAnimate; */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.individualBack{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+
+    position: absolute;
+
+    background-color: rgb(44, 42, 42);
+    /* color: rgb(0, 0, 0); */
+    background-size: cover;
+    backface-visibility: hidden;
+    
+    transform: rotateY(180deg);
+    
+    box-shadow: 0px 0px 6px 3px rgb(255, 255, 255);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playerInfoTable{
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.playerInfoTable table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+th{
+    width: 40%;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(255, 111, 0);
+}
+td{
+    padding-left: 7px;
+    color: rgb(253, 228, 158);
+}
+.playerInfoTable center{
+    display: none;
+}
+
+.deleteImgWhen1000{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+.Player_rotate {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+@media screen and (max-width : 800px) {
+    .PlayerCard{
+        width: 300px;
+        height: 370px;
+        /* border: 1px solid; */
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .playerInfoTable table{
+        display: none;
+    }
+    .playerInfoTable{
+        width: 100%;
+        height: 100%;
+    
+        background-color: transparent;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .playerInfoTable center{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+/* ================================================================================================ */
+
+.matches{
+    width: 100%;
+}
+.matchHeading{
+    font-size: 28px;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Kanit", sans-serif;
+    text-shadow: 0px 0px 18px gray;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 6%;
+    padding-bottom: 1%;
+    color: rgb(255, 244, 244);  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.matchSideHead{
+    width: 100%;
+    /* height: 7svh; */
+    padding-top: 10px;
+    font-size: large;
+    font-weight: bold;
+
+    font-size: 24px;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.listOfMatches{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-bottom: 10px;
+
+    scale: 0.6;
+    animation: zoomIn;
+    animation-duration: 0.5s;
+    animation-timeline: view();
+    animation-range-end: scroll();
+}
+.aboutMatch{
+    width: 300px;
+    height: 100pX;
+    border: 1px solid;
+    font-size: 20PX;
+    font-weight: bold;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    margin-top: 20 ;
+    position: relative;
+
+    box-shadow: 0px 0px 4px 0.6px white;
+    transition: all 0.2s;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.aboutMatch img{
+    width: 100%;
+    height: 100%;
+
+}
+.aboutMatch:hover{
+    scale: 1.08;
+    /* scale: 0.95; */
+    opacity: 0.8;
+}
+@media screen and (max-width : 1300px) {
+    .listOfMatches{
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+.aboutMatchInner{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    background-color:white;
+    scale: 0;
+
+    font-size: 15PX;
+
+    /* display: none; */
+    
+    transition: all 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view{
+    width: 90px;
+    height: 20px;
+
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity: 1;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view:hover{
+    scale: 1.2;
+    cursor: pointer;
+
+    background-color: rgb(107, 0, 107);
+    color: white;
+    font-weight: bold;
+}
+.aboutMatch:hover .aboutMatchInner{
+    scale: 1;
+    /* display: block; */
+}
+
+/* ============================================================== */
+
+
+.aboutIndividualCup {
+    display: none;
+}
+.tournaments{
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid; */
+
+    border-radius: 15px;
+    
+    background-color: rgb(255, 255, 255);
+
+
+}
+.tournaments table{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 63);
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tournaments center{
+    display: none;
+}
+
+
+/* ======================================================= */
+
+.miniInnerCupName{
+    color: rgb(255, 0, 0);
+}
+.infoRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5;
+}
+
+.infoHeading {
+    width: 50%;
+    font-weight: bold;
+    color: #5a5a5a;
+}
+
+.infoDetail {
+    width: 50%;
+    text-align: right;
+    color: #edc2c2;
+}
+wcMatterIn500{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width : 800px) {
+    .tournaments{
+        width: 350px;
+        height: 330px;
+        /* border: 1px solid; */
+    }
+    .tournaments table{
+        display : none;
+    }
+    .tournaments center{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(59, 0, 10);
+    }
+    .tournaments wcMatterIn500{
+        display: block;
+    }
+}
+
+.memorableMoments{
+    width: 100%;
+    
+}
+.memoryVideoOut{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.memorableMomentsVideo{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    
+    position: relative;
+}
+.memorableMomentsVideo video{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    box-shadow: 2px 1px 5px 2px gray ;
+
+}

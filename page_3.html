@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="all_pages.css">
+</head>
+<body>
+    <div class="overlay" onclick="close_tab('sports.html')"></div>
+    <div class="box_3">
+        <div class="head_3">
+            <div class="name_3"><i>VolleyBall</i></div>
+            <div class="back_3" onclick="close_tab('sports.html')"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="options_3">
+            <div class="basic_3" onclick="show_basic()">
+                <div class="text_1_3">Game</div>
+                <div class="basic_bar_3"></div>
+            </div>
+            <div class="rules_3" onclick="show_rules()">
+                <div class="text_2_3">Rules</div>
+                <div class="rules_bar_3"></div>
+            </div>
+            <div class="countries_3" onclick="show_countries()">
+                <div class="text_3_3">TopCountries</div>
+                <div class="countries_bar_3"></div>
+            </div>
+        </div>
+        <div class="bottom_3">
+            <div class="content_3">
+                <div class="txt_area_3">Volleyball is a dynamic team sport played on a rectangular court divided by a net, with two teams of six players each. The objective is to send the ball over the net and into the opponent's side of the court, while preventing the ball from touching the ground on one's own side. Each team can hit the ball up to three times before it must be sent over the net. Players use a combination of skills including serving, passing, setting, attacking, and blocking. The game is typically played in sets, and the first team to reach a predetermined number of points wins the set, with matches often played in a best-of-five format.</div>
+                <div class="img_area_3">
+                    <img class="ig" src="./images/volleyball.webp">
+                </div>
+            </div>
+            <div class="info_3">
+                <ul>
+                    <li><strong>Teams</strong>: Each team has six players on the court at a time.</li>
+                    <li><strong>Objective</strong>: Send the ball over the net and into the opponent’s court to score points.</li>
+                    <li><strong>Scoring</strong>: Points are scored when the ball lands in the opponent’s court or when the opponent makes an error. Matches are usually played in a best-of-five sets format.</li>
+                    <li><strong>Hits</strong>: Each team is allowed up to three hits to return the ball over the net. Hits typically include a bump (pass), set, and spike (attack).</li>
+                    <li><strong>Rotations</strong>: Players must rotate positions in a clockwise direction each time they win the serve from the opposing team.</li>
+                    <li><strong>Serving</strong>: The game starts with a serve from behind the end line. The ball must be hit over the net and into the opponent’s court.</li>
+                    <li><strong>Net Contact</strong>: Players are not allowed to touch the net during play.</li>
+                    <li><strong>Foot Fault</strong>: The server must not step on or over the end line while serving.</li>
+                    <li><strong>Ball In/Out</strong>: The ball is considered in if it touches the court lines or lands within the court area. It is out if it lands outside the court boundaries.</li>
+                    <li><strong>Blocking</strong>: Players are allowed to block at the net, but the block does not count as one of the team's three hits.</li>
+                    <li><strong>Back Row Attack</strong>: Back row players must jump from behind the attack line when performing an attack hit.</li>
+                    <li><strong>Substitutions</strong>: Teams can make substitutions according to the rules set by the league or competition.</li>
+                </ul>
+                
+                  
+            </div>
+            <div class="carousel_3">
+                <div class="actual_3">
+                <div class="child_3">
+                    <div class="inner_3">
+                        <img class="ig" src="./images/volleyball_brazil.jpeg">
+                    </div>
+                    <div class="slide-name_3">Brazil</div>
+                </div>
+                <div class="child_3">
+                    <div class="inner_3">
+                        <img class="ig" src="./images/volleyball_us.jpeg">
+
+                    </div>
+                    <div class="slide-name_3">UnitedStates</div>
+                </div>
+                <div class="child_3">
+                    <div class="inner_3">
+                        <img class="ig" src="./images/volleyball_china.jpeg">
+                    </div>
+                    <div class="slide-name_3">China</div>
+                </div>
+                <div class="child_3">
+                    <div class="inner_3">
+                        <img class="ig" src="./images/volleyball_russia.jpg">
+                    </div>
+                    <div class="slide-name_3">Russia</div>
+                </div>
+                <div class="child_3">
+                    <div class="inner_3">
+                        <img class="ig" src="./images/volleyball_germany.webp">
+                    </div>
+                    <div class="slide-name_3">Germany</div>
+                </div>
+                </div>
+                <div class="know_3" onclick="more_details('volleyBall.html')">Know More</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <script>
+        function show_basic() {
+            document.querySelector('.content_3').style.display = "flex";
+    document.querySelector('.info_3').style.display = "none";
+    document.querySelector('.carousel_3').style.display = "none";
+    document.querySelector('.actual_3').style.display = "none";
+    document.querySelector('.bottom_3').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.countries_bar_3').style= "left:-800px";
+    document.querySelector('.basic_bar_3').style= "left:0px";
+    document.querySelector('.rules_bar_3').style= "left:-400px";
+    document.querySelector('.text_1_3').style= "color:white";
+    document.querySelector('.text_2_3').style= "color:black";
+    document.querySelector('.text_3_3').style= "color:black";
+}
+function show_rules() {
+    document.querySelector('.content_3').style.display = "none";
+    document.querySelector('.info_3').style.display = "flex";
+    document.querySelector('.carousel_3').style.display = "none";
+    document.querySelector('.bottom_3').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.basic_bar_3').style= "left:400px";
+    document.querySelector('.countries_bar_3').style= "left:-800px";
+    document.querySelector('.rules_bar_3').style= "left:0px";
+    document.querySelector('.text_1_3').style= "color:black";
+    document.querySelector('.text_2_3').style= "color:white";
+    document.querySelector('.text_3_3').style= "color:black";
+}
+function show_countries() {
+    document.querySelector('.content_3').style.display = "none";
+    document.querySelector('.content_3').style.overflow = "hidden";
+    document.querySelector('.info_3').style.display = "none";
+    document.querySelector('.carousel_3').style.display = "flex";
+    document.querySelector('.carousel_3').style= "z-index:0";
+    document.querySelector('.actual_3').style.display = "flex";
+    document.querySelector('.bottom_3').style= "background-color:transparent";
+    document.querySelector('.basic_bar_3').style= "left:400px";
+    document.querySelector('.rules_bar_3').style= "left:400px";
+    document.querySelector('.countries_bar_3').style= "left:0px";
+    document.querySelector('.text_1_3').style= "color:black";
+    document.querySelector('.text_2_3').style= "color:black";
+    document.querySelector('.text_3_3').style= "color:white";
+}
+
+
+function close_tab(url) {
+    window.location.replace(url);
+}
+function more_details(url) {
+    window.open(url, '_blank');
+}
+
+
+
+$(document).ready(function() {
+    $('.actual_3').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay : true,
+        autoplaySpeed : 800,
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: '0',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    
+
+
+
+    $('.carousel').on('setPosition', function() {
+        if ($('.carousel').is(':visible')) {
+            $('.know').show();
+        } else {
+            $('.know').hide();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="all_pages.css">
+</head>
+<body>
+    <div class="overlay" onclick="close_tab('sports.html')"></div>
+    <div class="box_9">
+        <div class="head_9">
+            <div class="name_9"><i>Badminton</i></div>
+            <div class="back_9" onclick="close_tab('sports.html')"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="options_9">
+            <div class="basic_9" onclick="show_basic()">
+                <div class="text_1_9">Game</div>
+                <div class="basic_bar_9"></div>
+            </div>
+            <div class="rules_9" onclick="show_rules()">
+                <div class="text_2_9">Rules</div>
+                <div class="rules_bar_9"></div>
+            </div>
+            <div class="countries_9" onclick="show_countries()">
+                <div class="text_3_9">TopCountries</div>
+                <div class="countries_bar_9"></div>
+            </div>
+        </div>
+        <div class="bottom_9">
+            <div class="content_9">
+                <div class="txt_area_9">Badminton is a fast-paced racquet sport played either indoors or outdoors, where players use a shuttlecock to score points against their opponents. The game is typically played by two players (singles) or two pairs (doubles). The objective is to hit the shuttlecock over a net and into the opponent's side of the court in such a way that they cannot return it successfully. Badminton requires agility, precision, and strategy, with players engaging in quick exchanges of shots that demand both skillful maneuvering and powerful strikes.</div>
+                <div class="img_area_9">
+                    <img class="ig" src="./images/badminton.jpg">
+                </div>
+            </div>
+            <div class="info_9">
+                <ul>
+                    <li><strong>Objective:</strong> Hit the shuttlecock over the net and into the opponent's side of the court to score points.</li>
+                    <li><strong>Court:</strong> The court is rectangular and divided by a net. Dimensions vary slightly for singles and doubles play.</li>
+                    <li><strong>Serving:</strong>
+                        <ul>
+                            <li>Serve must be hit below the waist and diagonally across the court.</li>
+                            <li>The server must remain within the serving area until the shuttlecock is hit.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Scoring:</strong>
+                        <ul>
+                            <li>Matches are usually played best of three games.</li>
+                            <li>Each game is played to 21 points; players must win by at least 2 points.</li>
+                            <li>Points are scored on every serve, regardless of which side served.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Rally:</strong>
+                        <ul>
+                            <li>The shuttlecock must be hit over the net and land within the opponent’s court.</li>
+                            <li>Players are allowed to hit the shuttlecock once before it crosses the net.</li>
+                            <li>The shuttlecock must not touch the ground or any other surface outside the court boundaries.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Faults:</strong>
+                        <ul>
+                            <li>A fault occurs if the shuttlecock lands outside the court, fails to clear the net, or if a player hits the shuttlecock before it crosses the net.</li>
+                            <li>Players must not touch the net or cross over to the opponent’s side of the court.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Lets:</strong> A let is called when play is stopped due to an unforeseen or accidental occurrence, such as the shuttlecock hitting the top of the net on a serve but still going over.</li>
+                </ul>
+                
+                  
+            </div>
+            <div class="carousel_9">
+                <div class="actual_9">
+                <div class="child_9">
+                    <div class="inner_9">
+                        <img class="ig" src="./images/badminton_china.webp">
+                    </div>
+                    <div class="slide-name_9">China</div>
+                </div>
+                <div class="child_9">
+                    <div class="inner_9">
+                        <img class="ig" src="./images/badminton_indonesia.jpg">
+
+                    </div>
+                    <div class="slide-name_9">Indonesia</div>
+                </div>
+                <div class="child_9">
+                    <div class="inner_9">
+                        <img class="ig" src="./images/badminton_denmark.jpg">
+                    </div>
+                    <div class="slide-name_9">Denmark</div>
+                </div>
+                <div class="child_9">
+                    <div class="inner_9">
+                        <img class="ig" src="./images/badminton_southkorea.jpg">
+                    </div>
+                    <div class="slide-name_9">SouthKorea</div>
+                </div>
+                <div class="child_9">
+                    <div class="inner_9">
+                        <img class="ig" src="./images/badminton_india.webp">
+                    </div>
+                    <div class="slide-name_9">India</div>
+                </div>
+                </div>
+                <div class="know_9" onclick="more_details('batmenton.html')">Know More</div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <script>
+        function show_basic() {
+            document.querySelector('.content_9').style.display = "flex";
+    document.querySelector('.info_9').style.display = "none";
+    document.querySelector('.carousel_9').style.display = "none";
+    document.querySelector('.actual_9').style.display = "none";
+    document.querySelector('.bottom_9').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.countries_bar_9').style= "left:-800px";
+    document.querySelector('.basic_bar_9').style= "left:0px";
+    document.querySelector('.rules_bar_9').style= "left:-400px";
+    document.querySelector('.text_1_9').style= "color:white";
+    document.querySelector('.text_2_9').style= "color:black";
+    document.querySelector('.text_3_9').style= "color:black";
+
+
+
+}
+function show_rules() {
+    document.querySelector('.content_9').style.display = "none";
+    document.querySelector('.info_9').style.display = "flex";
+    document.querySelector('.carousel_9').style.display = "none";
+    document.querySelector('.bottom_9').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.basic_bar_9').style= "left:400px";
+    document.querySelector('.countries_bar_9').style= "left:-800px";
+    document.querySelector('.rules_bar_9').style= "left:0px";
+    document.querySelector('.text_1_9').style= "color:black";
+    document.querySelector('.text_2_9').style= "color:white";
+    document.querySelector('.text_3_9').style= "color:black";
+
+}
+function show_countries() {
+    document.querySelector('.content_9').style.display = "none";
+    document.querySelector('.content_9').style.overflow = "hidden";
+    document.querySelector('.info_9').style.display = "none";
+    document.querySelector('.carousel_9').style.display = "flex";
+    document.querySelector('.carousel_9').style= "z-index:0";
+    document.querySelector('.actual_9').style.display = "flex";
+    document.querySelector('.bottom_9').style= "background-color:transparent";
+    document.querySelector('.basic_bar_9').style= "left:400px";
+    document.querySelector('.rules_bar_9').style= "left:400px";
+    document.querySelector('.countries_bar_9').style= "left:0px";
+    document.querySelector('.text_1_9').style= "color:black";
+    document.querySelector('.text_2_9').style= "color:black";
+    document.querySelector('.text_3_9').style= "color:white";
+
+}
+
+
+function close_tab(url) {
+    window.location.replace(url);
+}
+function more_details(url) {
+    window.open(url, '_blank');
+}
+
+
+
+
+
+
+
+$(document).ready(function() {
+    $('.actual_9').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay : true ,
+        autoplaySpeed : 700 ,
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: '0',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    
+
+
+
+    $('.carousel').on('setPosition', function() {
+        if ($('.carousel').is(':visible')) {
+            $('.know').show();
+        } else {
+            $('.know').hide();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

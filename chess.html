@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="indoor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        :root {
+            --font-family: "Roboto Slab", serif;
+            --font-color:
+        }
+
+        .ve_heading {
+            font-family: var(--font-family);
+        }
+        /* .mainHome {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .gameMainImage {
+            height: 85vh;
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .mainOuter {
+            height: 100%;
+            width: 100%;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 50px;
+            overflow: hidden;
+            transition: all 1s;
+        }
+
+        .mainInner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: -5px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .slick-active {
+            color: red;
+        }
+
+        .slick-prev, .slick-next {
+            display: none !important;
+        }
+        @media (max-width: 1024px) {
+            .gameMainImage {
+                height: 75vh !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gameMainImage {
+                height: 65vh !important;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gameMainImage {
+                height: 55vh !important;
+                justify-content: center;
+            }
+        } */
+    </style>
+    <title>Slick Carousel Example</title>
+</head>
+<body>
+    <div class="mainHome">
+        <div class="gameMainImage">
+            <div class="mainOuter c1">
+                <div class="mainInner c11">
+                    <img src="https://magazine.byu.edu/wp-content/uploads/2016/11/14-398_Slade_141028_Chess-Club_214DONE-1200x800.jpg" alt="India Cricket Team">
+                </div>
+            </div>
+            <div class="mainOuter c2">
+                <div class="mainInner c21">
+                    <img src="https://th.bing.com/th/id/R.40b1a0a24ec1a4d380802fe7292b8cc0?rik=YclmRL%2f88fh5iA&riu=http%3a%2f%2fwww.stac.qld.edu.au%2fPublishingImages%2fChess.jpg&ehk=A7f7%2bVbAdk1ZjNB750haP0KKXULX%2fW0%2blTM8J1dgE6A%3d&risl=&pid=ImgRaw&r=0" alt="Australia Cricket Team">
+                </div>
+            </div>
+            <div class="mainOuter c3">
+                <div class="mainInner c31">
+                    <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/ColinStapczynski/phpyJ58fu.jpeg" alt="West Indies Cricket Team">
+                </div>
+            </div>
+            <div class="mainOuter c4">
+                <div class="mainInner c41">
+                    <img src="https://www.hindustantimes.com/ht-img/img/2024/01/17/1600x900/ANI-20231121144-0_1705471480172_1705471530977.jpg" alt="Pakistan Cricket Team">
+                </div>
+            </div>
+            <div class="mainOuter c5">
+                <div class="mainInner c51">
+                    <img src="https://www.insidethegames.biz/media/image/168149/o/8SRLeO7NPgIbSc7Y" alt="Sri Lanka Cricket Team">
+                </div>
+            </div>
+            <div class="mainOuter c6">
+                <div class="mainInner c61">
+                    <img src="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/08/25102814/1274085.019a0d76.5000x5000o.5344f26fc48d-1568x882.png" alt="England Cricket Team">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ve_heading">POPULAR MEN PLAYERS</div>
+    <div class="ve_men">
+        <div class="ve_matter">
+            <div class="ve_aboutMatter"><span class="ve_matter1">Advancing_Theory</span>:<span class="ve_matter2">Steinitz, Fischer, and Kasparov significantly advanced chess strategy and theory</span></div>
+            <div class="ve_aboutMatter"><span class="ve_matter1">Popularizing</span>:<span class="ve_matter2">Fischer, Kasparov, and Carlsen played key roles in promoting chess globally through media and public engagements.</span></div>
+            <div class="ve_aboutMatter"><span class="ve_matter1">Inspiration</span>:<span class="ve_matter2">Champions like Capablanca, Tal, and Carlsen inspire young players with their dedication and success</span></div>
+            <div class="ve_aboutMatter"><span class="ve_matter1">Education</span>:<span class="ve_matter2">Top players improved chess education by authoring influential books and establishing training programs and schools</span></div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event);">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://th.bing.com/th/id/R.afdc6857227ff8918ae5a55772482d0a?rik=mocVuYCZD%2bNPmQ&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f5943b11db3db2be040e6fa54%2f5948dd26b3db2b68019f818c%2f5a73f16553450a6bc938f447%2f1517548014696%2fphoca_thumb_l_viswanathan%2banand%2b4.jpg%3fformat%3d1500w&ehk=2iLN2gJaaPopNsHP5CjSVfuirXsf28XEZzXv0O3kMyc%3d&risl=&pid=ImgRaw&r=0">
+                    </div>
+                    <div class="ve_Name">
+                        Viswanathan Anand
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> December 11, 1969</div>
+                        <div><span>Country:</span>India</div>
+                        <div><span>Trophies:</span> 5-time World Champion</div>
+                        <div><span>Rank: </span> 9</div>
+                        <div><span>Best Record:</span>Peak rating 2817</div>
+                        <div><span>Awards:</span> 5x World Champion, Padma Vibhushan.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://chesstopics.com/wp-content/uploads/2023/03/Fabiano-Caruana-GCT-Poland-2022.webp">
+                    </div>
+                    <div class="ve_Name">
+                        Fabiano Caruana
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> July 30, 1992</div>
+                        <div><span>Country:</span> USA</div>
+                        <div><span>Trophies:</span>Multiple national titles</div>
+                        <div><span>Rank: </span>4</div>
+                        <div><span>Best Record:</span> Peak rating 2844</div>
+                        <div><span>Awards:</span> US Chess Champion.<div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://media.npr.org/assets/img/2022/07/20/ap21344477319182_custom-32c06406f279c69d5e853bc30649315b43e5cc19-s1100-c50.jpg">
+                    </div>
+                    <div class="ve_Name">
+                        Magnus Carlsen
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> November 30, 1990</div>
+                        <div><span>Country:</span> Norway</div>
+                        <div><span>Trophies:</span> 5 World Championships</div>
+                        <div><span>Rank:</span> 1</div>
+                        <div><span>Best Record:</span> Peak rating 2882</div>
+                        <div><span>Awards:</span> 5x World Champion, Chess Oscar</div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://th.bing.com/th/id/OIP.D1dCVzy55Btw69_h3pqjOQAAAA?rs=1&pid=ImgDetMain">
+                    </div>
+                    <div class="ve_Name">
+                        Ian Nepomniachtchi
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> July 14, 1990</div>
+                        <div><span>Country:</span> Russia</div>
+                        <div><span>Trophies:</span> Multiple national titles</div>
+                        <div><span>Rank:</span> 2</div>
+                        <div><span>Best Record:</span> Peak rating 2792</div>
+                        <div><span>Awards:</span> Russian Chess Champion</div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://chessjournal.b-cdn.net/wp-content/uploads/2022/04/Wesley-So-Chess-Player-Profile.jpg">
+                    </div>
+                    <div class="ve_Name">
+                        Wesley So
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> October 9, 1993</div>
+                        <div><span>Country:</span> USA</div>
+                        <div><span>Trophies:</span> Multiple national titles</div>
+                        <div><span>Rank:</span> 6</div>
+                        <div><span>Best Record:</span> Peak rating 2822</div>
+                        <div><span>Awards:</span> US Chess Champion, World Fischer Random Champion</div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="ve_heading">POPULAR WOMEN PLAYERS</div>
+    <div class="ve_men">
+        <div class="ve_matter" >
+            <div class="ve_aboutMatter"><span class="ve_matter1">Advancing_Theory</span>:<span class="ve_matter2">Judit Polgár, Nona Gaprindashvili, and Hou Yifan achieved significant milestones in chess.</span></div>
+    <div class="ve_aboutMatter"><span class="ve_matter1">Popularizing</span>:<span class="ve_matter2">Players like Judit Polgár and Susan Polgár advocate for greater female involvement in chess.</span></div>
+    <div class="ve_aboutMatter"><span class="ve_matter1">Inspiration</span>:<span class="ve_matter2">Figures such as Judit Polgár, Maia Chiburdanidze, and Hou Yifan inspire young female players.</span></div>
+    <div class="ve_aboutMatter"><span class="ve_matter1">Education</span>:<span class="ve_matter2">Female players have contributed to chess education through books and training programs, enhancing learning resources.</span></div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://wikibio.in/wp-content/uploads/2022/12/Harika-Dronavalli.jpg">
+                    </div>
+                    <div class="ve_Name">
+                        Harika Dronavalli
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> January 12, 1991</div>
+<div><span>Country:</span> India</div>
+<div><span>Trophies:</span> Multiple national titles</div>
+<div><span>Rank:</span> 10</div>
+<div><span>Best Record:</span> Peak rating 2543</div>
+<div><span>Awards:</span> Indian Women's Chess Champion</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://i.pinimg.com/originals/19/2d/e1/192de1cf16cf55f147a7f3071b23de5e.jpg">
+                    </div>
+                    <div class="ve_Name">
+                        Alexandra Kosteniuk
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> April 23, 1984</div>
+<div><span>Country:</span> Russia</div>
+<div><span>Trophies:</span> Women's World Champion</div>
+<div><span>Rank:</span> 5</div>
+<div><span>Best Record:</span> Peak rating 2572</div>
+<div><span>Awards:</span> Women's World Champion</div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://cbin.b-cdn.net/img/JU/Ju_Wenjun_game_5_H8P7E_1000x667.jpeg">
+                    </div>
+                    <div class="ve_Name">
+                        Ju Wenjun
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> January 31, 1991</div>
+<div><span>Country:</span> China</div>
+<div><span>Trophies:</span> 3-time Women's World Champion</div>
+<div><span>Rank:</span> 2</div>
+<div><span>Best Record:</span> Peak rating 2604</div>
+<div><span>Awards:</span> Women's World Champion</div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://im.indiatimes.in/content/2019/Dec/Koneru-Humpy_5e0997309a780.jpg">
+                    </div>
+                    <div class="ve_Name">
+                        Humpy Koneru
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> March 31, 1987</div>
+                        <div><span>Country:</span> India</div>
+                        <div><span>Trophies:</span> Multiple national titles</div>
+                        <div><span>Rank:</span> 4</div>
+                        <div><span>Best Record:</span> Peak rating 2623</div>
+                        <div><span>Awards:</span> Indian Women's Chess Champion</div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="ve_parent">
+            <div class="ve_card" onclick="rotate(event)">
+                <div class="ve_front">
+                    <div class="ve_pic">
+                        <img
+                            src="https://th.bing.com/th/id/OIP.icN4yfLBqWKGADkYe7IEiQHaF1?rs=1&pid=ImgDetMain">
+                    </div>
+                    <div class="ve_Name">
+                        Nana Dzagnidze
+                    </div>
+                </div>
+                <div class="ve_back">
+                    <div class="ve_details">
+                        <div><span>Born:</span> January 1, 1987</div>
+<div><span>Country:</span> Georgia</div>
+<div><span>Trophies:</span> Multiple national titles</div>
+<div><span>Rank:</span> 6</div>
+<div><span>Best Record:</span> Peak rating 2573</div>
+<div><span>Awards:</span> Georgian Women's Chess Champion</div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <div class="ve_heading">Major Tournaments</div>
+    <div class="ve_matches">
+        <div class="ve_eachmatch">
+            <img src="https://img.freepik.com/premium-vector/logo-design-world-chess-championship-with-chess-vintage-illustration_159993-827.jpg?w=2000">
+            <div class="ve_view">
+                <div class="ve_viewbutton" onclick="ve_showDetails('ve_1st')">
+                    View More
+                </div>
+            </div>
+        </div>
+        <div class="ve_torunment" id="ve_details3">
+            <button class="ve_close_button" onclick="ve_closeDetails()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="ve_details2">
+            <div class="ve_thead"></div>
+            <div class="ve_inner"><span class="ve_span"></span>: <span class="ve_value"></span></div>
+            <div class="ve_inner"><span class="ve_span"></span>: <span class="ve_value"></span></div>
+            <div class="ve_inner"><span class="ve_span"></span>: <span class="ve_value"></span></div>
+            <div class="ve_inner"><span class="ve_span"></span>: <span class="ve_value"></span></div>
+            <div class="ve_inner"><span class="ve_span"></span>: <span class="ve_value"></span></div>
+             </div>
+        </div>
+        <div class="ve_eachmatch">
+            <img src="https://th.bing.com/th/id/OIP.CPZzA-gWz_ylB6Nn4IUccQHaTS?rs=1&pid=ImgDetMain">
+            <div class="ve_view">
+                <div class="ve_viewbutton" onclick="ve_showDetails('ve_2nd')">
+                    View More
+                </div>
+            </div>
+        </div>
+        <div class="ve_eachmatch">
+            <img src="https://th.bing.com/th/id/R.fe551587b94edb7b406008a6f4d35741?rik=hthSlJoZvhIPDA&riu=http%3a%2f%2fcgct.eu%2fwp-content%2fuploads%2f2023%2f06%2fgrand-chess-tour-znak-1-1.jpg&ehk=WOw8xwgKzaHkQwQD1FiBoMqpQxOjlgfuadqx0tGUnws%3d&risl=&pid=ImgRaw&r=0">
+            <div class="ve_view">
+                <div class="ve_viewbutton" onclick="ve_showDetails('ve_3rd')">
+                    View More
+                </div>
+            </div>
+        </div>
+        <div class="ve_eachmatch">
+            <img src="https://images.chesscomfiles.com/uploads/event/ec90439e-09b2-11ed-bec7-afbc3c38bb8d.d0cfad80.jpeg">
+            <div class="ve_view">
+                <div class="ve_viewbutton" onclick="ve_showDetails('ve_4th')">
+                    View More
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gameMainImage').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-arrow-left"></i></button>',
+                nextArrow: '<button class="next-arrow"><i class="fa-solid fa-arrow-right"></i></button>',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+<script src="indoor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="all_pages.css">
+</head>
+<body>
+    <div class="overlay" onclick="close_tab('sports.html')"></div>
+    <div class="box_10">
+        <div class="head_10">
+            <div class="name_10"><i>Boxing</i></div>
+            <div class="back_10" onclick="close_tab('sports.html')"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="options_10">
+            <div class="basic_10" onclick="show_basic()">
+                <div class="text_1_10">Game</div>
+                <div class="basic_bar_10"></div>
+            </div>
+            <div class="rules_10" onclick="show_rules()">
+                <div class="text_2_10">Rules</div>
+                <div class="rules_bar_10"></div>
+            </div>
+            <div class="countries_10" onclick="show_countries()">
+                <div class="text_3_10">TopCountries</div>
+                <div class="countries_bar_10"></div>
+            </div>
+        </div>
+        <div class="bottom_10">
+            <div class="content_10">
+                <div class="txt_area_10">Boxing is a dynamic and intense sport where two competitors, wearing gloves, engage in a regulated bout to score points or achieve a knockout. The objective is to land punches on the opponent while evading their strikes, demonstrating both skill and strategy. Boxing matches are held in a ring and governed by a set of rules to ensure safety and fairness. The sport emphasizes strength, agility, and technique, and it is renowned for its physical and mental demands. Boxers are judged on their ability to strike effectively, defend, and maintain composure throughout the match.</div>
+                <div class="img_area_10">
+                    <img class="ig" src="./images/boxing.jpg">
+                </div>
+            </div>
+            <div class="info_10">
+                <ul>
+                    <li><strong>Rounds:</strong> A boxing match is typically divided into 3-minute rounds, with a 1-minute rest period between rounds. The number of rounds varies by the type of match.</li>
+                    <li><strong>Scoring:</strong> Points are awarded based on the effectiveness of punches, defense, and ring control. Judges score each round, and the boxer with the most points at the end of the match wins.</li>
+                    <li><strong>Legal Punches:</strong> Only punches delivered with the knuckles of the glove are considered legal. Punches must land on the front or sides of the opponent's torso or head.</li>
+                    <li><strong>Fouls:</strong> Illegal actions include hitting below the belt, holding, hitting with the back of the glove, headbutting, and hitting after the bell.</li>
+                    <li><strong>Knockout (KO):</strong> A boxer is declared the winner by knockout if the opponent is knocked down and unable to get up before the referee's count of 10.</li>
+                    <li><strong>Technical Knockout (TKO):</strong> The referee may stop the fight and award a TKO if one boxer is deemed unable to continue due to injury or being overwhelmed.</li>
+                    <li><strong>Disqualification:</strong> A boxer can be disqualified for repeated fouls, unsportsmanlike conduct, or failing to follow the referee's instructions.</li>
+                    <li><strong>Equipment:</strong> Boxers must wear gloves, a mouthguard, and protective headgear (in amateur bouts). They are also required to wear trunks and appropriate footwear.</li>
+                    <li><strong>Referee's Role:</strong> The referee oversees the match, enforces the rules, and ensures the safety of the boxers. The referee has the authority to stop the fight if necessary.</li>
+                    <li><strong>Weight Classes:</strong> Boxers compete in different weight classes to ensure fair competition. Each weight class has specific weight limits that must be adhered to.</li>
+                </ul>
+                
+                  
+            </div>
+            <div class="carousel_10">
+                <div class="actual_10">
+                <div class="child_10">
+                    <div class="inner_10">
+                        <img class="ig" src="./images/boxing_usa.jpg">
+                    </div>
+                    <div class="slide-name_10">USA</div>
+                </div>
+                <div class="child_10">
+                    <div class="inner_10">
+                        <img class="ig" src="./images/boxing_mexico.png">
+
+                    </div>
+                    <div class="slide-name_10">Mexico</div>
+                </div>
+                <div class="child_10">
+                    <div class="inner_10">
+                        <img class="ig" src="./images/boxing_philippines.jpg">
+                    </div>
+                    <div class="slide-name_10">Philippines</div>
+                </div>
+                <div class="child_10">
+                    <div class="inner_10">
+                        <img class="ig" src="./images/boxing_england.jpg">
+                    </div>
+                    <div class="slide-name_10">England</div>
+                </div>
+                <div class="child_10">
+                    <div class="inner_10">
+                        <img class="ig" src="./images/boxing_cuba.jpg">
+                    </div>
+                    <div class="slide-name_10">Cuba</div>
+                </div>
+                </div>
+                <div class="know_10" onclick="more_details('boxing.html')">Know More</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <script>
+        function show_basic() {
+            document.querySelector('.content_10').style.display = "flex";
+    document.querySelector('.info_10').style.display = "none";
+    document.querySelector('.carousel_10').style.display = "none";
+    document.querySelector('.actual_10').style.display = "none";
+    document.querySelector('.bottom_10').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.countries_bar_10').style= "left:-800px";
+    document.querySelector('.basic_bar_10').style= "left:0px";
+    document.querySelector('.rules_bar_10').style= "left:-400px";
+    document.querySelector('.text_1_10').style= "color:white";
+    document.querySelector('.text_2_10').style= "color:black";
+    document.querySelector('.text_3_10').style= "color:black";
+
+
+
+}
+function show_rules() {
+    document.querySelector('.content_10').style.display = "none";
+    document.querySelector('.info_10').style.display = "flex";
+    document.querySelector('.carousel_10').style.display = "none";
+    document.querySelector('.bottom_10').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.basic_bar_10').style= "left:400px";
+    document.querySelector('.countries_bar_10').style= "left:-800px";
+    document.querySelector('.rules_bar_10').style= "left:0px";
+    document.querySelector('.text_1_10').style= "color:black";
+    document.querySelector('.text_2_10').style= "color:white";
+    document.querySelector('.text_3_10').style= "color:black";
+
+}
+function show_countries() {
+    document.querySelector('.content_10').style.display = "none";
+    document.querySelector('.content_10').style.overflow = "hidden";
+    document.querySelector('.info_10').style.display = "none";
+    document.querySelector('.carousel_10').style.display = "flex";
+    document.querySelector('.carousel_10').style= "z-index:0";
+    document.querySelector('.actual_10').style.display = "flex";
+    document.querySelector('.bottom_10').style= "background-color:transparent";
+    document.querySelector('.basic_bar_10').style= "left:400px";
+    document.querySelector('.rules_bar_10').style= "left:400px";
+    document.querySelector('.countries_bar_10').style= "left:0px";
+    document.querySelector('.text_1_10').style= "color:black";
+    document.querySelector('.text_2_10').style= "color:black";
+    document.querySelector('.text_3_10').style= "color:white";
+
+}
+
+
+function close_tab(url) {
+    window.location.replace(url);
+}
+function more_details(url) {
+    window.open(url, '_blank');
+}
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+    $('.actual_10').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay : true ,
+        autoplaySpeed : 700 ,
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: '0',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    
+
+
+
+    $('.carousel').on('setPosition', function() {
+        if ($('.carousel').is(':visible')) {
+            $('.know').show();
+        } else {
+            $('.know').hide();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

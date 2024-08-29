@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="all_pages.css">
+</head>
+<body>
+    <div class="overlay" onclick="close_tab('sports.html')"></div>
+    <div class="box_7">
+        <div class="head_7">
+            <div class="name_7"><i>Chess</i></div>
+            <div class="back_7" onclick="close_tab('sports.html')"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="options_7">
+            <div class="basic_7" onclick="show_basic()">
+                <div class="text_1_7">Game</div>
+                <div class="basic_bar_7"></div>
+            </div>
+            <div class="rules_7" onclick="show_rules()">
+                <div class="text_2_7">Rules</div>
+                <div class="rules_bar_7"></div>
+            </div>
+            <div class="countries_7" onclick="show_countries()">
+                <div class="text_3_7">TopCountries</div>
+                <div class="countries_bar_7"></div>
+            </div>
+        </div>
+        <div class="bottom_7">
+            <div class="content_7">
+                <div class="txt_area_7">Chess is a strategic board game played between two opponents on an 8x8 grid called a chessboard. Each player begins with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The objective of the game is to checkmate the opponent's king, which means the king is placed under direct attack and has no legal move to escape. Chess combines strategy, tactics, and skill, and it has been a timeless and intellectually challenging game enjoyed by millions for centuries.</div>
+                <div class="img_area_7">
+                    <img class="ig" src="./images/chess.jpg">
+                </div>
+            </div>
+            <div class="info_7">
+                <ul>
+                    <li><strong>Objective:</strong> The primary goal is to checkmate your opponent’s king.</li>
+                    <li><strong>Setup:</strong> Each player starts with 16 pieces (1 king, 1 queen, 2 rooks, 2 knights, 2 bishops, 8 pawns) arranged on an 8x8 chessboard.</li>
+                    <li><strong>Turns:</strong> Players take turns to move one piece at a time, starting with White.</li>
+                    <li><strong>King:</strong> Moves one square in any direction. Can castle once per game if not in check.</li>
+                    <li><strong>Queen:</strong> Moves any number of squares in any direction.</li>
+                    <li><strong>Rook:</strong> Moves any number of squares horizontally or vertically.</li>
+                    <li><strong>Bishop:</strong> Moves any number of squares diagonally.</li>
+                    <li><strong>Knight:</strong> Moves in an L-shape: two squares in one direction and then one square perpendicular.</li>
+                    <li><strong>Pawn:</strong> Moves one square forward (two squares on its first move). Captures diagonally. Can promote to any piece (except a king) upon reaching the opposite end.</li>
+                    <li><strong>Check:</strong> When a king is under threat of capture.</li>
+                    <li><strong>Checkmate:</strong> When a king is in check and cannot escape.</li>
+                    <li><strong>Stalemate:</strong> When a player has no legal moves and their king is not in check, resulting in a draw.</li>
+                    <li><strong>Castling:</strong> A special move involving the king and a rook. The king moves two squares towards a rook, and the rook moves to the square next to the king.</li>
+                    <li><strong>En passant:</strong> A special pawn capture that can occur immediately after a pawn moves two squares forward from its starting position and lands beside an opponent's pawn.</li>
+                    <li><strong>Draw:</strong> The game can end in a draw due to stalemate, threefold repetition, the fifty-move rule, or insufficient material to checkmate.</li>
+                  </ul>
+                  
+                  
+            </div>
+            <div class="carousel_7">
+                <div class="actual_7">
+                <div class="child_7">
+                    <div class="inner_7">
+                        <img class="ig" src="./images/chess_russia.jpg">
+                    </div>
+                    <div class="slide-name_7">Russia</div>
+                </div>
+                <div class="child_7">
+                    <div class="inner_7">
+                        <img class="ig" src="./images/chess_china.jpg">
+                    </div>
+                    <div class="slide-name_7">China</div>
+                </div>
+                <div class="child_7">
+                    <div class="inner_7">
+                        <img class="ig" src="./images/chess_usa.jpg">
+
+                    </div>
+                    <div class="slide-name_7">USA</div>
+                </div>
+                <div class="child_7">
+                    <div class="inner_7">
+                        <img class="ig" src="./images/chess_india.jpg">
+                    </div>
+                    <div class="slide-name_7">India</div>
+                </div>
+                <div class="child_7">
+                    <div class="inner_7">
+                        <img class="ig" src="./images/chess_ukraine.jpg">
+                    </div>
+                    <div class="slide-name_7">Ukraine</div>
+                </div>
+                </div>
+                <div class="know_7" onclick="more_details('chess.html')">Know More</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <script>
+        function show_basic() {
+            document.querySelector('.content_7').style.display = "flex";
+    document.querySelector('.info_7').style.display = "none";
+    document.querySelector('.carousel_7').style.display = "none";
+    document.querySelector('.actual_7').style.display = "none";
+    document.querySelector('.bottom_7').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.countries_bar_7').style= "left:-800px";
+    document.querySelector('.basic_bar_7').style= "left:0px";
+    document.querySelector('.rules_bar_7').style= "left:-400px";
+    document.querySelector('.text_1_7').style= "color:white";
+    document.querySelector('.text_2_7').style= "color:black";
+    document.querySelector('.text_3_7').style= "color:black";
+
+
+}
+function show_rules() {
+    document.querySelector('.content_7').style.display = "none";
+    document.querySelector('.info_7').style.display = "flex";
+    document.querySelector('.carousel_7').style.display = "none";
+    document.querySelector('.bottom_7').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.basic_bar_7').style= "left:400px";
+    document.querySelector('.countries_bar_7').style= "left:-800px";
+    document.querySelector('.rules_bar_7').style= "left:0px";
+    document.querySelector('.text_1_7').style= "color:black";
+    document.querySelector('.text_2_7').style= "color:white";
+    document.querySelector('.text_3_7').style= "color:black";
+
+}
+function show_countries() {
+    document.querySelector('.content_7').style.display = "none";
+    document.querySelector('.content_7').style.overflow = "hidden";
+    document.querySelector('.info_7').style.display = "none";
+    document.querySelector('.carousel_7').style.display = "flex";
+    document.querySelector('.carousel_7').style= "z-index:0";
+    document.querySelector('.actual_7').style.display = "flex";
+    document.querySelector('.bottom_7').style= "background-color:transparent";
+    document.querySelector('.basic_bar_7').style= "left:400px";
+    document.querySelector('.rules_bar_7').style= "left:400px";
+    document.querySelector('.countries_bar_7').style= "left:0px";
+    document.querySelector('.text_1_7').style= "color:black";
+    document.querySelector('.text_2_7').style= "color:black";
+    document.querySelector('.text_3_7').style= "color:white";
+}
+
+
+function close_tab(url) {
+    window.location.replace(url);
+}
+function more_details(url) {
+    window.open(url, '_blank');
+}
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+    $('.actual_7').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay : true ,
+        autoplaySpeed : 700 ,
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: '0',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    
+
+
+
+    $('.carousel').on('setPosition', function() {
+        if ($('.carousel').is(':visible')) {
+            $('.know').show();
+        } else {
+            $('.know').hide();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

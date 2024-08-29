@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="all_pages.css">
+</head>
+<body>
+    <div class="overlay" onclick="close_tab('sports.html')"></div>
+    <div class="box_6">
+        <div class="head_6">
+            <div class="name_6"><i>Carrom</i></div>
+            <div class="back_6" onclick="close_tab('sports.html')"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="options_6">
+            <div class="basic_6" onclick="show_basic()">
+                <div class="text_1_6">Game</div>
+                <div class="basic_bar_6"></div>
+            </div>
+            <div class="rules_6" onclick="show_rules()">
+                <div class="text_2_6">Rules</div>
+                <div class="rules_bar_6"></div>
+            </div>
+            <div class="countries_6" onclick="show_countries()">
+                <div class="text_3_6">TopCountries</div>
+                <div class="countries_bar_6"></div>
+            </div>
+        </div>
+        <div class="bottom_6">
+            <div class="content_6">
+                <div class="txt_area_6">Carrom is a popular indoor tabletop game originating from South Asia. It is played on a square board with pockets in each corner. The objective is to use a striker to flick small discs, known as carrom men, into the pockets. Each player or team tries to pocket their designated carrom men while also aiming to pocket the queen, a special red disc, followed by covering it with their own carrom men to score points. Carrom is a game of skill, strategy, and precision, enjoyed by players of all ages.</div>
+                <div class="img_area_6">
+                    <img class="ig" src="./images/carroms.webp">
+                </div>
+            </div>
+            <div class="info_6">
+                <ul>
+                    <li><strong>Objective</strong>: The main aim is to pocket all of one's carrom men before the opponent.</li>
+                    <li><strong>Striker Placement</strong>: The striker must be placed within the baseline and touching both playing lines.</li>
+                    <li><strong>Turn Order</strong>: Players alternate turns, using the striker to flick carrom men into the pockets.</li>
+                    <li><strong>Scoring the Queen</strong>: The queen must be pocketed and covered by pocketing one of the player's own carrom men in the next turn.</li>
+                    <li><strong>Fouls</strong>:
+                        <ul>
+                            <li>Pocketing the striker results in a foul.</li>
+                            <li>Pocketing the opponent's carrom men results in a foul.</li>
+                            <li>If the striker or any carrom men leave the board, it’s considered a foul.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Scoring</strong>: At the end of the game, the winner scores points equal to the total number of carrom men left on the board by the opponent, plus bonus points for the queen if covered.</li>
+                    <li><strong>Winning</strong>: The first player or team to reach 29 points wins the match.</li>
+                </ul>
+                
+                  
+            </div>
+            <div class="carousel_6">
+                <div class="actual_6">
+                <div class="child_6">
+                    <div class="inner_6">
+                        <img class="ig" src="./images/carroms_india.jpg">
+                    </div>
+                    <div class="slide-name_6">India</div>
+                </div>
+                <div class="child_6">
+                    <div class="inner_6">
+                        <img class="ig" src="./images/carroms_japan.png">
+
+                    </div>
+                    <div class="slide-name_6">Japan</div>
+                </div>
+                <div class="child_6">
+                    <div class="inner_6">
+                        <img class="ig" src="./images/carroms_korea.png">
+                    </div>
+                    <div class="slide-name_6">Korea</div>
+                </div>
+                <div class="child_6">
+                    <div class="inner_6">
+                        <img class="ig" src="./images/carroms_singapore.png">
+                    </div>
+                    <div class="slide-name_6">Singapore</div>
+                </div>
+                <div class="child_6">
+                    <div class="inner_6">
+                        <img class="ig" src="./images/carroms_malaysia.jpg">
+                    </div>
+                    <div class="slide-name_6">Malaysia</div>
+                </div>
+                </div>
+                <div class="know_6" onclick="more_details('carrom.html')">Know More</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <script>
+        function show_basic() {
+            document.querySelector('.content_6').style.display = "flex";
+    document.querySelector('.info_6').style.display = "none";
+    document.querySelector('.carousel_6').style.display = "none";
+    document.querySelector('.actual_6').style.display = "none";
+    document.querySelector('.bottom_6').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.countries_bar_6').style= "left:-800px";
+    document.querySelector('.basic_bar_6').style= "left:0px";
+    document.querySelector('.rules_bar_6').style= "left:-400px";
+    document.querySelector('.text_1_6').style= "color:white";
+    document.querySelector('.text_2_6').style= "color:black";
+    document.querySelector('.text_3_6').style= "color:black";
+
+}
+function show_rules() {
+    document.querySelector('.content_6').style.display = "none";
+    document.querySelector('.info_6').style.display = "flex";
+    document.querySelector('.carousel_6').style.display = "none";
+    document.querySelector('.bottom_6').style= "background-color:rgb(164, 203, 215)";
+    document.querySelector('.basic_bar_6').style= "left:400px";
+    document.querySelector('.countries_bar_6').style= "left:-800px";
+    document.querySelector('.rules_bar_6').style= "left:0px";
+    document.querySelector('.text_1_6').style= "color:black";
+    document.querySelector('.text_2_6').style= "color:white";
+    document.querySelector('.text_3_6').style= "color:black";
+
+}
+function show_countries() {
+    document.querySelector('.content_6').style.display = "none";
+    document.querySelector('.content_6').style.overflow = "hidden";
+    document.querySelector('.info_6').style.display = "none";
+    document.querySelector('.carousel_6').style.display = "flex";
+    document.querySelector('.carousel_6').style= "z-index:0";
+    document.querySelector('.actual_6').style.display = "flex";
+    document.querySelector('.bottom_6').style= "background-color:transparent";
+    document.querySelector('.basic_bar_6').style= "left:400px";
+    document.querySelector('.rules_bar_6').style= "left:400px";
+    document.querySelector('.countries_bar_6').style= "left:0px";
+    document.querySelector('.text_1_6').style= "color:black";
+    document.querySelector('.text_2_6').style= "color:black";
+    document.querySelector('.text_3_6').style= "color:white";
+}
+
+
+function close_tab(url) {
+    window.location.replace(url);
+}
+function more_details(url) {
+    window.open(url, '_blank');
+}
+
+
+
+
+
+
+$(document).ready(function() {
+    $('.actual_6').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay : true,
+        autoplaySpeed : 700,
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: '0',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    
+
+
+
+    $('.carousel').on('setPosition', function() {
+        if ($('.carousel').is(':visible')) {
+            $('.know').show();
+        } else {
+            $('.know').hide();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
